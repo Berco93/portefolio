@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8; /* fond gris clair */
+  color: #333; /* texte gris foncé */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+
+
+/* Header */
+header {
+  background-color: #000; /* fond noir */
+  color: #fff; /* texte blanc */
+  padding: 20px;
+  text-align: center;
+  background-image: url('https://www.fond-ecran-hd.net/Public/uploads/2019-06-06/artdigitalcircuitylectronique3dimage.jpg');
+  background-size: cover; /* Cela fait en sorte que l'image couvre tout l'arrière-plan */
+  background-position: center; /* Centre l'image */
+}
+
+
+
+
+h1 {
+  width: 10%; /* L'image prendra 50% de la largeur de son conteneur */
+  height: auto; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Main content */
+.content {
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 0fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 50%;
+  height: auto;
+  border: 2px solid #000; /* bordure noire pour les images */
+  transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* effet d'agrandissement au survol */
+}
+
+#btn-acceuil {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background-color: transparent;  /* Fond transparent autour de l'image */
+}
+
+.clickable-image {
+  max-width: 40px;
+  height: auto;
+  background-color: transparent;  /* Assurer qu'il n'y ait pas de fond autour de l'image */
+  border: none;  /* Enlever la bordure si elle existe */
+}
